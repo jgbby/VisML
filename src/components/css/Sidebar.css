@@ -1,0 +1,137 @@
+.side-bar {
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: white;
+    transition: 0.8s ease;
+    background-color: #263a5c;
+    color: white;
+    position: absolute;
+}
+
+.toggle-menu:hover {
+    height: 200px;
+}
+
+.toggle-menu {
+    height: 100px;
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 9rem;
+    width: 10px;
+    position: absolute;
+    outline: 0;
+    z-index: 1;
+    background-color: #243757;
+    border-color: white;
+    border-left: 0;
+    transition: 0.8s ease;
+}
+
+
+/* HEADER */
+
+.alert{
+    background-color: #2f4772;
+    border-color: white;
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    transition: 0.8s ease;
+}
+
+.alert:hover {
+    background-color: #3a568a;
+}
+
+
+/* INPUTS / OPTIONS */
+
+.options {
+    padding: 10px;
+}
+
+button {
+    transition: 0.8s ease;
+}
+
+.edit button {
+    width: 90px;
+    height: 90px;
+    transition: 0.8s ease;
+}
+
+img {
+    transition: 0.8s ease;
+}
+
+.alert img:hover {
+    animation: spin 3s infinite;
+    animation-timing-function: linear;
+}
+
+.edit img:hover {
+    transform: rotate(360deg);
+}
+
+
+/* ALGOS DROPDOWN */
+
+.algos {
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.algos button {
+    width: 280px;
+    background-color: rgb(82, 82, 189);
+    transition: 0.8s ease;
+}
+
+.algos button:hover {
+    background-color: rgb(92, 92, 212);
+}
+
+.algos button:active {
+    background-color: rgb(92, 92, 212);
+}
+
+.algos .dropdown-menu {
+    background-color: rgb(92, 92, 212);
+}
+
+.algos .dropdown-item {
+    color: white;
+}
+
+/* SUBMIT BUTTON */
+
+#submit {
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    transition: 0.8s ease;
+}
+
+#submit:hover {
+    animation: shake 0.5s;
+    background-color: #38558a;
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes shake {
+    25% { transform: rotate(30deg); }
+    50% { transform: rotate(-30deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
