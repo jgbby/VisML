@@ -1,0 +1,23 @@
+.AlgoInfo {
+   background-color: #121535;
+   width: 100vw;
+   height: 100vh 
+}
+
+div .container {
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.row {
+    justify-content: right;
+    background-color: white;
+    width: 100vw;
+    margin: 0px;
+}
+
+.col {
+    background-color: red;
+    text-align: left;
+}
