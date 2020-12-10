@@ -1,137 +1,58 @@
-#boxButton div {
-    display: -webkit-box;
-    display: flex;
-    height: 100vh;
-    -webkit-box-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-flow: column;
-  }
-  #boxButton div a {
-    width: 100%;
-    max-width: 240px;
-    height: 54px;
-    padding: 8px;
-    font-size: 0.8rem;
-    font-weight: 900;
-    color: #ff4655;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    box-shadow: 0 0 0 1px inset rgba(236, 232, 225, 0.3);
-    position: relative;
-    margin: 10px 0;
-  }
-  #boxButton div a.white:hover > p {
-    color: #ece8e1;
-  }
-  #boxButton div a.white > p {
-    background: #ece8e1;
-    color: #0f1923;
-  }
-  #boxButton div a.white > p span.base {
-    border: 1px solid transparent;
-  }
-  #boxButton div a.transparent:hover > p {
-    color: #ece8e1;
-  }
-  #boxButton div a.transparent:hover > p span.text {
-    box-shadow: 0 0 0 1px #ece8e1;
-  }
-  #boxButton div a.transparent > p {
-    background: #0f1923;
-    color: #ece8e1;
-  }
-  #boxButton div a.transparent > p span.base {
-    border: 1px solid #ece8e1;
-  }
-  #boxButton div a:after, div a:before {
-    content: "";
-    width: 1px;
-    position: absolute;
-    height: 8px;
-    background: #0f1923;
-    left: 0;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  #boxButton div a:before {
-    right: 0;
-    left: initial;
-  }
-  #boxButton div a p {
-    margin: 0;
-    height: 54px;
-    line-height: 54px;
-    box-sizing: border-box;
-    z-index: 1;
-    left: 0;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-  }
-  #boxButton div a p span.base {
-    box-sizing: border-box;
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    border: 1px solid #ff4655;
-  }
-  #boxButton div a p span.base:before {
-    content: "";
-    width: 2px;
-    height: 2px;
-    left: -1px;
-    top: -1px;
-    background: #0f1923;
-    position: absolute;
-    -webkit-transition: 0.3s ease-out all;
-    transition: 0.3s ease-out all;
-  }
-  #boxButton div a p span.bg {
-    left: -5%;
-    position: absolute;
-    background: #ff4655;
-    width: 0;
-    height: 100%;
-    z-index: 3;
-    -webkit-transition: 0.3s ease-out all;
-    transition: 0.3s ease-out all;
-    -webkit-transform: skewX(-10deg);
-            transform: skewX(-10deg);
-  }
-  #boxButton div a p span.text {
-    z-index: 4;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  #boxButton div a p span.text:after {
-    content: "";
-    width: 4px;
-    height: 4px;
-    right: 0;
-    bottom: 0;
-    background: #0f1923;
-    position: absolute;
-    -webkit-transition: 0.3s ease-out all;
-    transition: 0.3s ease-out all;
-    z-index: 5;
-  }
-  #boxButton div a:hover {
-    color: #ece8e1;
-  }
-  #boxButton div a:hover span.bg {
-    width: 110%;
-  }
-  #boxButton div a:hover span.text:after {
-    background: #ece8e1;
-  }
+.outer {
+  position: relative;
+  width: 20vw;
+  height: 10vh;
+  border: 2px solid rgb(0, 47, 255);
+  overflow: hidden;
+
+  left: 10vw;
+}
+
+.inner {
+  width: 50vw;
+  height: 9vh;
+  transition: 1s ease;
+  transform: rotate(-30deg);
+  z-index: 0;
+
+  background: linear-gradient(
+        90deg,
+        #133096 0.22%,
+        rgba(0, 56, 255, 0) 132.13%
+    );
+}
+
+.inner:hover {
+  transform: scale(2);
+  z-index: 0;
+}
+
+.label {
+
+  font-family: "Muli", sans-serif;
+  font-size: 25px;
+  color: rgb(99, 99, 99);
+
+  top: 30%;
+  text-align: center;
+  z-index: 1;
+}
+
+.center {
+  position: absolute;
+  margin-left: 0;
+  margin-right: 0;
+  left: 0;
+  right: 0;
+}
+
+#first #second{
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  width: 50%;
+  height: 50%;
+  background: rgb(36, 124, 224);
+
+  transform: rotate(-30deg);
+}

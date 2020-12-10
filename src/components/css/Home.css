@@ -59,6 +59,7 @@ div .secondHalf {
 }
 
 .title {
+    font-family: 'Nunito', sans-serif;
 
     color: white;
     
@@ -73,6 +74,7 @@ div .secondHalf {
 }
 
 .welcome {
+    font-family: 'Nunito', sans-serif;
 
     color: white;
 
@@ -87,6 +89,13 @@ div .secondHalf {
     animation-iteration-count: 1;
     animation-fill-mode: forwards; 
 }
+
+
+.playButton {
+    margin: 0px;
+    padding: 0px;
+}
+
 
 .floating {   
     animation-name: floating; 

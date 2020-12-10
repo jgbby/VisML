@@ -11,7 +11,7 @@ class Home extends React.Component {
     return (
         <div id="Home">
             <div className="firstHalf">
-                <h1 className="title">Home</h1>
+                <h1 className="title">VisML</h1>
                 <p className="welcome">
                     Welcome to VisML. This is an educational website intended for students, hobbyists, and developers alike.
                     Here you can begin your journey in exploring Artificial Intelligence.
