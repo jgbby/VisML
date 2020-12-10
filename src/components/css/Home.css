@@ -1,0 +1,117 @@
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1;
+
+    } 
+} 
+
+@keyframes grow { 
+    0% { 
+        transform: scale(0.2);
+    } 
+    50% {
+        transform: scale(1.1);
+    }
+    100% { 
+        transform: scale(1);
+    } 
+}
+
+@keyframes slideInLeftAnimation {
+    0% {
+       position: absolute;
+       transform: translate(-100vw); 
+    }
+    100% {
+    }
+}
+
+@keyframes slideInRightAnimation {
+    0% {
+        position: absolute;
+        transform: translate(200vw);
+    }
+    100% {
+    }
+}
+
+div #Home {
+    font: white;
+}
+
+div .firstHalf {
+    width: 100vw;
+    height: 50vh;
+    background: linear-gradient(
+        90deg,
+        #133096 0.22%,
+        rgba(0, 56, 255, 0) 132.13%
+    );
+}
+
+div .secondHalf {
+    width: 100vw;
+    height: 50vh;
+    background-color: rgb(226, 219, 221);
+}
+
+.title {
+
+    color: white;
+    
+    text-align: left;
+    padding-left: 5vw;
+    padding-top: 5vh;
+    font-size: 100px;
+
+    animation: slideInLeftAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.welcome {
+
+    color: white;
+
+    text-align: left;
+    padding-left: 5vw;
+    padding-top: 1vh;
+    font-size: 25px;
+
+    width: 65vw;
+
+    animation: slideInRightAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards; 
+}
+
+.floating {   
+    animation-name: floating; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+} 
+  
+@keyframes floating { 
+    0% { transform: translate(0,  0px); } 
+    50%  { transform: translate(0, 15px); } 
+    100%   { transform: translate(0, -0px); }     
+}
+
+#robot_illustration {
+    position: absolute;
+    top: 10vh;
+    transform: scale(1);
+
+    animation-name: floating; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+
+    animation: grow ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
