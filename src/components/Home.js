@@ -25,6 +25,9 @@ class Home extends React.Component {
                 </div>
             </div>
             <img id="robot_illustration" src={robot_illustration}></img>
+            <div className="oval shadow">
+
+            </div>
         </div>
        
     );

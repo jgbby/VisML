@@ -100,6 +100,13 @@ div .secondHalf {
     50%  { transform: translate(0, 15px); } 
     100%   { transform: translate(0, -0px); }     
 }
+@keyframes waxwane { 
+    0% { transform: scaleX(1); } 
+    50%  { 
+        transform: scale(1.2);
+     } 
+    100%   { transform: scaleX(1); }     
+}
 
 #robot_illustration {
     position: absolute;
@@ -111,7 +118,27 @@ div .secondHalf {
     animation-iteration-count: infinite; 
     animation-timing-function: ease-in-out; 
 
+    /*
     animation: grow ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    */
 }
+
+.oval {
+    width: 80px;
+    height: 10px;
+    background: rgb(25, 11, 109);
+    border-radius: 100px / 50px;
+
+    animation-name: waxwane; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+  }
+
+  .shadow {
+      position: absolute;
+      top: 80vh;
+      right: 17vw;
+  }
