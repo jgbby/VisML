@@ -3,7 +3,7 @@
   position: relative;
   width: 20vw;
   height: 10vh;
-  border: 2px solid rgb(0, 47, 255);
+  border: 2px solid #2755fa;
   border-radius: 5px;
   overflow: hidden;
 
@@ -15,16 +15,20 @@
 }
 
 .outer:hover {
-  background-color: rgb(65, 65, 255);
+  background-color: #2755fa;
+}
+
+.outer:hover label {
   color: white;
 }
 
 label {
   font-family: "Muli", sans-serif;
   font-size: 30px;
-  color: rgb(99, 99, 99);
+  color: #2755fa;
   z-index: 1;
-  position: absolute;
+  position: relative;
+  margin-top: 20px;
 }
 
 .center {

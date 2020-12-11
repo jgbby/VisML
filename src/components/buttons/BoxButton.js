@@ -9,7 +9,7 @@ class BoxButton extends React.Component {
             <div id="boxButton">
 
                 <div className="outer">
-                    <label className="">Playground</label>
+                    <label className="">PLAY</label>
                 </div>
 
 
