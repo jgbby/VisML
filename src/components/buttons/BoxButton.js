@@ -9,12 +9,7 @@ class BoxButton extends React.Component {
             <div id="boxButton">
 
                 <div className="outer">
-                    <p className="center label">
-                        PLAYGROUND
-                    </p>
-                    <div className="center inner">
-
-                    </div>
+                    <label className="">Playground</label>
                 </div>
 
 

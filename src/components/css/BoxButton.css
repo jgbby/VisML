@@ -1,41 +1,30 @@
 .outer {
+  display: block;
   position: relative;
   width: 20vw;
   height: 10vh;
   border: 2px solid rgb(0, 47, 255);
+  border-radius: 5px;
   overflow: hidden;
 
   left: 10vw;
+  transition-duration: 0.4s;
+  top: 50%;
+
+  align-items: center;
 }
 
-.inner {
-  width: 50vw;
-  height: 9vh;
-  transition: 1s ease;
-  transform: rotate(-30deg);
-  z-index: 0;
-
-  background: linear-gradient(
-        90deg,
-        #133096 0.22%,
-        rgba(0, 56, 255, 0) 132.13%
-    );
+.outer:hover {
+  background-color: rgb(65, 65, 255);
+  color: white;
 }
 
-.inner:hover {
-  transform: scale(2);
-  z-index: 0;
-}
-
-.label {
-
+label {
   font-family: "Muli", sans-serif;
-  font-size: 25px;
+  font-size: 30px;
   color: rgb(99, 99, 99);
-
-  top: 30%;
-  text-align: center;
   z-index: 1;
+  position: absolute;
 }
 
 .center {
