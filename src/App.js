@@ -6,7 +6,6 @@ import Play from './components/Play'
 import AlgoInfo from './components/AlgoInfo';
 import Error from './components/Error';
 import Nav from './components/Nav';
-import Home2 from './components/Home2';
 
 
 import './App.css';
@@ -31,7 +30,6 @@ function App() {
             <Nav/>
               <Switch>
                 <Route path="/" component={Home} exact/>
-                <Route path="/2" component={Home2} exact/>
                 <Route path="/play" component={Play}/>
                 <Route path="/algoinfo" component={AlgoInfo}/>
                 <Route component={Error}/>

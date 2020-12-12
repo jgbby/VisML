@@ -40,9 +40,11 @@
 
 div #Home {
     font: white;
+    overflow-x: hidden;
 }
 
 div .firstHalf {
+    display: block;
     width: 100vw;
     height: 50vh;
     background: linear-gradient(
@@ -68,7 +70,7 @@ div .secondHalf {
     padding-top: 5vh;
     font-size: 100px;
 
-    animation: slideInLeftAnimation ease 3s;
+    animation: slideInLeftAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -85,7 +87,7 @@ div .secondHalf {
 
     width: 65vw;
 
-    animation: slideInRightAnimation ease 3s;
+    animation: slideInRightAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards; 
 }
@@ -93,7 +95,18 @@ div .secondHalf {
 
 .playButton {
     margin: 0px;
+    margin-top: 20px;
     padding: 0px;
+}
+.playButton p:hover {
+    color: white;
+    transition: 1s ease-in;
+}
+
+.strip {
+    background-color: rgb(63, 63, 63);
+    width: 100vw;
+    height: 3vh;
 }
 
 
@@ -119,8 +132,8 @@ div .secondHalf {
 
 #robot_illustration {
     position: absolute;
-    top: 10vh;
-    transform: scale(1);
+    right: 0%;
+    top: 15rem;
 
     animation-name: floating; 
     animation-duration: 3s; 
@@ -140,14 +153,21 @@ div .secondHalf {
     background: rgb(25, 11, 109);
     border-radius: 100px / 50px;
 
-    animation-name: waxwane; 
-    animation-duration: 3s; 
-    animation-iteration-count: infinite; 
-    animation-timing-function: ease-in-out; 
+    position: absolute;
+    top: 36.5rem;
+    right: 170px; /*(img_width / 2) + img_right;*/
+    transform: translate(500px, 500px);
   }
 
   .shadow {
-      position: absolute;
+
+    animation-name: waxwane; 
+    animation-duration: 3s; 
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out;
+
+      /*
       top: 80vh;
       right: 17vw;
+      */
   }

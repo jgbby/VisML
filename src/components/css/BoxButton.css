@@ -12,14 +12,39 @@
   top: 50%;
 
   align-items: center;
+  opacity: 1;
+
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
 }
 
 .outer:hover {
-  background-color: #2755fa;
+  border: 2px solid grey;
 }
 
 .outer:hover label {
   color: white;
+}
+
+.outer:hover .inner {
+  height: 20vh;
+  width: 20vw;
+}
+
+.inner {
+  position: absolute;
+  top: 0%;
+  background: linear-gradient(
+        90deg,
+        #2755fa 0.22%,
+        rgba(0, 55, 255, 0.493) 132.13%
+    );
+  width: 0vw;
+  height: 10vh;
+
+  transition-duration: 0.5s;
 }
 
 label {
@@ -31,21 +56,7 @@ label {
   margin-top: 20px;
 }
 
-.center {
-  position: absolute;
-  margin-left: 0;
-  margin-right: 0;
-  left: 0;
-  right: 0;
-}
-
-#first #second{
-  position: absolute;
-  left: 20%;
-  top: 10%;
-  width: 50%;
-  height: 50%;
-  background: rgb(36, 124, 224);
-
-  transform: rotate(-30deg);
+@keyframes appear { 
+    0% { opacity: 0.5; height: 0; } 
+    100%   {  }     
 }

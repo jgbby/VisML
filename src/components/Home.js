@@ -3,6 +3,7 @@ import React from 'react';
 import BoxButton from './buttons/BoxButton.js';
 import "./css/Home.css";
 import robot_illustration from "./media/robot_illustration.png"
+import { Container, Row, Col } from 'reactstrap';
 
 class Home extends React.Component {
 
@@ -18,10 +19,9 @@ class Home extends React.Component {
                 </p>
             </div>
             <div className="secondHalf">
-                <p>This is the second half</p>
-
+                <div className="strip"></div>
                 <div className="playButton">
-                    <BoxButton></BoxButton>
+                    <BoxButton to="/play"label="PLAY"></BoxButton>
                 </div>
             </div>
             <img id="robot_illustration" src={robot_illustration}></img>

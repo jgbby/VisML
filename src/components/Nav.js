@@ -15,7 +15,6 @@ class Nav extends Component {
         return (
             <Navbar>
                 <NavLink to="/">Home</NavLink>
-                <NavLink to="/2">Home2</NavLink>
                 <NavLink to="/play">PlayGround</NavLink>
                 <NavLink to="/algoinfo">AlgoInfo</NavLink>
                 <h3>VisML</h3>

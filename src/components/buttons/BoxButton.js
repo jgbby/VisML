@@ -2,17 +2,22 @@ import React from 'react';
 import { GridContext } from '../GridContext';
 import "../css/BoxButton.css"
 
+import { NavLink } from 'react-router-dom'
+
 class BoxButton extends React.Component {
 
     render() {
         return (
             <div id="boxButton">
 
-                <div className="outer">
-                    <label className="">PLAY</label>
-                </div>
+                <NavLink to={this.props.to}>
+                    <div className="outer">
+                        <label to="/play">{this.props.label}</label>
+                        <div className='inner'>
 
-
+                        </div>
+                    </div>
+                </NavLink>
             </div>
         )
     }
