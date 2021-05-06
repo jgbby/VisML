@@ -42,6 +42,9 @@ class Grid extends React.Component {
         /**
          * Renders the current board's state
          */
+        let c = this.canvas.getContext("2d");
+        c.fillStyle = "#272727";
+        c.fillRect(0, 0, WIDTH, HEIGHT);
         for (let row=0; row < this.rows; row++){
             for (let col=0; col < this.cols; col++){
                 this.renderCell(row, col)
